@@ -1,0 +1,11 @@
+@mixin button-style {
+    width: 33%;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    text-align: center;
+    border: none;
+    float: left;
+}

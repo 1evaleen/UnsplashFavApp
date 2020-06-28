@@ -1,0 +1,15 @@
+@import '../../../styles/mixins';
+
+.fav-toggle {
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+
+    background-image: url('./assets/star.png');
+
+    &--fav {
+        background-image: url('./assets/filledStar.png');
+    }
+}

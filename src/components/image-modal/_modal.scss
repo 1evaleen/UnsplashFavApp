@@ -1,0 +1,85 @@
+@import '../../../styles/mixins';
+@import '../../../styles/fonts';
+
+.modal {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    background-color: white;
+
+    &__action {
+        display: inline-block;
+        height: 44px;
+        width: 44px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+
+        &.--download {
+            background-image: url('./assets/download.png');
+        }
+
+        &.--close {
+            background-image: url('./assets/x.png');
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    &__img {
+        position: fixed;
+        top: 80px;
+        bottom: 60px;
+        left: 0px;
+        right: 0px;
+        z-index: 200;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    &__footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+
+        &__photographer-profile-pic {
+            position: absolute;
+            top: 12px;
+            left: 14px;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;        
+        }
+        &__photographer-name {
+            position: absolute;
+            top: 16px;
+            left: 60px;
+            width: max-content;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 28px;
+            align-items: center;        
+        }
+    }
+}

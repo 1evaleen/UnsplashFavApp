@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__title">Home</div>
+        <div class="header__sub-title">latest photos</div>
+        <div class="toggle-gallery-view"></div>
+    </div>
+
+    <div class="search hide">
+        <input class="search__input" type="text" placeholder="Search all photos" data-searchinput>
+        <button class="search__button" data-searchbutton>search</button>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery__list">
+        </div>
+        <button data-action="load-more" class="gallery__see-more-btn">see more</button>
+    </div>
+
+    <div class="modal hide">
+        <div class="modal__header">
+            <div class="col-3" id="fav-toggle" ></div>
+            <div class="col-3"> <button class="modal__action --download" data-action-download></button></div>
+            <div class="col-3"><button class="modal__action --close" data-action-close></button></div>
+        </div>
+        <div class="modal__img"></div>
+        <div class="modal__footer">
+            <div class="modal__footer__photographer-profile-pic"></div>
+            <div class="modal__footer__photographer-name"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <nav>
+            <a class="footer__action --search" href="#search"></a>
+            <a class="footer__action --home" href="#home"></a>
+            <a class="footer__action --favourites" href="#favourites"></a>
+        </nav>
+    </footer>
+
+    <!-- <script src="./src/persistence.js"></script>
+    <script src="./src/services/Image.js"></script>
+    <script src="./src/components/pageController.js"></script>
+    <script src="./src/components/fav-image/index.js"></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/main.js"></script> -->
+    <script src="./dist/app.bundle.js"></script>
+</body>
+
+</html>
