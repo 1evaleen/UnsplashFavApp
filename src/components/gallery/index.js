@@ -81,7 +81,7 @@ class Gallery {
     }
     this.images = _images;
     this.render();
-  }
+  } 
 
   clear() {
     this.imagesContainer.innerHTML = '';
